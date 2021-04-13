@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import OnOff from './components/OnOff/OnOff';
+import Accordion from './components/Accordion';
+import Rating from './components/Rating';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PageTitle pageTitle={" This is app components"} />
+      <PageTitle pageTitle={"My friend!"} />
+      <OnOff on={false} />
+      <Accordion titleValue={"Menu"} collapsed={false} />
+      {/* <Accordion titleValue={"Users"} collapsed = {true}/> */}
+
+
+      <Rating />
+
     </div>
   );
+}
+
+function PageTitle(props: any) {
+  return (
+    <div>
+      {props.pageTitle}
+    </div>
+
+  )
 }
 
 export default App;
