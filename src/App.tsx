@@ -23,6 +23,7 @@ function App() {
 function PageTitle(props: any) {
   return (
     <div>
+      delete me
       {props.pageTitle}
     </div>
 
