@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import OnOff from './components/OnOff/OnOff';
 import Accordion from './components/Accordion';
-import Rating from './components/Rating';
+import Rating from './Rating/Rating';
 
 function App() {
   return (
