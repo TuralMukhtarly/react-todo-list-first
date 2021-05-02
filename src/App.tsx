@@ -12,8 +12,6 @@ function App() {
       <OnOff on={false} />
       <Accordion titleValue={"Menu"} collapsed={false} />
       {/* <Accordion titleValue={"Users"} collapsed = {true}/> */}
-
-
       <Rating />
 
     </div>
@@ -23,10 +21,8 @@ function App() {
 function PageTitle(props: any) {
   return (
     <div>
-      delete me
       {props.pageTitle}
     </div>
-
   )
 }
 
